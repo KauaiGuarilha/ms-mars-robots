@@ -1,6 +1,12 @@
 # ms-mars-robots
 A new rover to explore mars and record many images for science.
 
+## Some topics about the application
+ * The terrain starts with 5x5 positions;
+ * The rover starts at coordinate (0,0,N);
+ * The Rover cannot move outside the specified area;
+ * Does not save rover state for another query.
+
 ## Input Movement Orientations description.
 
 Type | Description
