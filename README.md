@@ -18,9 +18,9 @@ Type | Description
  E   | East
  W   | West
  
- ## Type description
+ ## Type description.
 
-Tipo | Descrição
+Type | Description
 --:  | ----
  C   | character
  N   | number
@@ -31,15 +31,6 @@ Tipo | Descrição
 Request responsible for making the rover move.
 
 ### Movement [POST]
-
-## Description output: (0, 2, W)
-
-  Value | Type | size  | Occurrence |  Note
-  --:   | ---- |   --  |    --      |  --
-  0     |  N   |  1/1  |    1-1     |  x position.
-  2     |  N   |  1/1  |    1-1     |  y position
-  W     |  C   |  1/1  |    1-1     |  Cardinal Points Directions.
-
 
 ## Status code response 400
   Errors that may occur during request processing:
@@ -60,10 +51,19 @@ Request responsible for making the rover move.
   
 + Parameters
   + typeInputMove : `MML` (required, string).
+  + Exemple: `/rest/mars/MML`
   
 + Response 200 (application/json)
 
   (0, 2, W)
+  
+  ## Output description: (0, 2, W)
+
+  Value | Type | size  | Occurrence |  Note
+  --:   | ---- |   --  |    --      |  --
+  0     |  N   |  1/1  |    1-1     |  x position.
+  2     |  N   |  1/1  |    1-1     |  y position
+  W     |  C   |  1/1  |    1-1     |  Cardinal Points Directions.
 
 + Response 400 (application/json)
 
