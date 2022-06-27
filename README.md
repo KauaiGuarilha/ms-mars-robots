@@ -1,7 +1,7 @@
 # ms-mars-robots
 A new rover to explore mars and record many images for science.
 
-## Description of Input Movement Orientations
+## Input Movement Orientations description.
 
 Type | Description
 --:  | ----
@@ -9,7 +9,7 @@ Type | Description
  R   | Right
  L   | Left
  
-## Description of Cardinal Points Output Directions.
+## Cardinal Points Output Directions description.
 
 Type | Description
 --:  | ----
@@ -18,12 +18,27 @@ Type | Description
  E   | East
  W   | West
  
+ ## Type description
+
+Tipo | Descrição
+--:  | ----
+ C   | character
+ N   | number
+ 
 # Movement
 
 ## Movement Rover [/rest/mars/{typeInputMove}]
 Request responsible for making the rover move.
 
 ### Movement [POST]
+
+## Description output: (0, 2, W)
+
+  Value | Type | size  | Occurrence |  Note
+  --:   | ---- |   --  |    --      |  --
+  0     |  N   |  1/1  |    1-1     |  x position.
+  2     |  N   |  1/1  |    1-1     |  y position
+  W     |  C   |  1/1  |    1-1     |  Cardinal Points Directions.
 
 
 ## Status code response 400
